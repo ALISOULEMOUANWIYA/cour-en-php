@@ -1,0 +1,241 @@
+
+        body{
+            background: rgb(0 0 0 / 87%);
+        }
+        body h2{
+            position: relative;
+            width: 600px;
+            top: 15px;
+            left: 3%;
+            font-weight: bold;
+            color: beige;
+            text-align: center;
+        }
+        .cadre{
+            position: relative;
+            top: 13px;
+            left: 4%;
+            width: 570px;
+            height: 550px;
+            background: #272626;
+            text-shadow: 0.1px 0.1px 5px white, 0 0 0.3em white, 0 0 0.1em white;
+            margin: 0px 5px;
+            border-radius: 10px;
+            border-left-style: groove;
+            border-right-style: groove;
+            box-shadow:20px 0px 2px 8px rgb(126 126 150 / 40%);
+            font: 1.0em Georgia, serif;
+            transition: 0.7s;
+        }
+        .cadre:hover{
+            background: #211b1b;
+            border-color: black;
+            transition: 0.7s;
+            box-shadow: -19px 0px 2px 8px rgb(81 121 101 / 40%);
+            text-shadow: 0.1px 0.1px 0px white, 0 0 10em white, 0 0 12em white;
+            color: white;
+            font: 1.0em Georgia, serif;
+        }
+        #demo{
+            position: relative;
+            top: -7%;
+            left: 33px;
+            width: 500px;
+            height: 440px;
+            font-size: 20px;
+            font-weight: bold;
+            background: rgb(39 38 38);
+            box-shadow: 1px 0px 6px 7px rgb(250 250 255 / 20%);
+            border-radius: 20px;
+            color: darkslategrey;
+            transition: 0.7s;
+        }
+         .cadre:hover
+         #demo{
+             transition: 0.7s;
+             background: rgb(169 166 166 / 38%);
+             box-shadow: 1px 0px 9px 10px rgb(21 21 21 / 73%);
+             transform: rotate3d(11, -6, 9, -360deg)
+         }
+         
+         #animationB {
+              width: 100px;
+              height: 100px;
+              background-color: red;
+              position: relative;
+              left:15px;
+              top:-15px;
+              border-radius: 20px;
+              animation-name: example;
+              animation-duration: 4s;
+              animation-delay: 2s;
+             z-index: 5;
+         }
+
+        @keyframes example {
+          0%   {background-color:red; left:15px; top:-15px;}
+          25%  {background-color:yellow; left:395px; top:-15px;}
+          50%  {background-color:blue; left:395px; top:300px;}
+          75%  {background-color:green; left:15px; top:300px;}
+          100% {background-color:red; left:15px; top:-15px;}
+        }
+        #location1{
+             position: relative;
+             width: 45px;
+             top: 47px;
+             right: 28px;
+             animation-name: changePoint;
+             animation-duration: 4s;
+             animation-delay: 2s;
+             z-index: 1;
+         }
+         @keyframes changePoint {
+          0%   {width: 45px; right: 28px; }
+          25%  {width: 425px; right: 380px; }
+          50%  {width: 425px; right: 380px; }
+          75%  {width: 45px; right: 28px; }
+          100% {width: 45px; right: 28px; }
+        }
+         #location2{
+             position: relative;
+             transform: rotate(90deg);
+             width: 366px;
+             right: 141px;
+             top: 143px;
+             animation-name: changePoint1;
+             animation-duration: 4s;
+             animation-delay: 2s;
+             z-index: 1;
+         }
+         @keyframes changePoint1 {
+          0%   {width: 366px;right: 141px; top: 143px;}
+          25%  {width: 366px;right: 141px; top: 143px;}
+          50%  {width: 56px;right: 2px; top: -15px;}
+          75%  {width: 56px;right: 2px; top: -15px;}
+          100% {width: 366px;right: 141px; top: 143px;}
+        }
+         #overlay{
+             width: 57px;
+             position: relative;
+             top: 465px;
+             left: 50%;
+         }
+         button{
+           position: relative;
+           border: none;
+           font-weight: bold;
+           height: 30px;
+           border-radius: 20px;
+           box-shadow: 1px 0px 6px 7px rgb(250 250 255 / 20%);
+           transition: 0.5s;
+         }
+         button:hover{
+           box-shadow: 1px 0px 6px 5px rgb(0 250 255 / 20%);
+            transition: 0.5s;
+         }
+        .cadre #alert0{
+            position: relative;
+            top: 5px;
+            left: 2%;
+            background: rgb(126 126 150 / 40%);
+            box-shadow: -1px 0px 2px 3px rgb(0 0 0 / 40%);
+            border-radius: 20px;
+            width: 550px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .cadre #alert{
+            position: relative;
+            left: 8%;
+            bottom: 35px;
+            background: rgb(126 126 150 / 40%);
+            border-radius: 20px;
+            width: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .cadre #alert2{
+            position: relative;
+            background: rgb(126 126 150 / 40%);
+            border-radius: 20px;
+            width: 200px;
+            bottom: 45px;
+            left: 8%;
+            text-align: center;
+            font-weight: bold;
+        }
+         audio{
+             display: none;
+         }
+
+         #location11{
+             position: relative;
+             top: 425px;
+             height: 12px;
+             width: 497px;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+         }
+         #location22{
+             position: relative;
+             transform: rotate(90deg);
+             height: 12px;
+             width: 434px;
+             top: 79px;
+             right: 243px;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+         }
+         #location3{
+             position: relative;
+             
+         }
+         #cordination{
+             position: relative;
+             left: 25px;
+         }
+         .ordonerPoint{
+             position: relative;
+             list-style: none;
+             font-size: 11px;
+             transform: scale(0.7);
+             bottom: 230px;
+             right: 100px;
+         }
+         .ordonerPointS1{
+             position: absolute;
+             display: flex;
+             list-style: none;
+             font-size: 12px;
+             transform: scale(0.7);
+             top: 413px;
+             left: -120px;
+         }
+         #listpoint{
+             position: relative;
+             left: 15px;
+         }
+#choixPoints{
+    position: absolute;
+    display: flex;
+    bottom: 8px;
+    left: 63%;
+    
+}
+.cadre #choixPoints input{
+    position: relative;
+    text-align: center;
+    display: initial;
+    top: 2px;
+    height: 20px;
+    width: 130px;
+    margin: 2px;
+    border-radius: 20px;
+}
+.cadre #choixPoints #inp1{
+    left: 23px;
+}
+.cadre #choixPoints #inp2{
+    left: 23px;
+}

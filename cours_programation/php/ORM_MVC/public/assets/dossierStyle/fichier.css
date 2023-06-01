@@ -1,0 +1,144 @@
+/*style user*/
+
+.user {
+    padding: 25px 30px;
+    width: 450px;
+}
+
+.user header,
+.user-list a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.user header .content img {
+    height: 50px;
+    width: 50px;
+}
+
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+:is(.user, .user-list) .content {
+    display: flex;
+    align-items: center;
+}
+
+:is(.user, .user-list) .details {
+    margin-left: 15px;
+}
+
+:is(.user, .user-list) .details span {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.user header .logout {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 15px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.user .search {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user .search .text {
+    font-size: 18px;
+}
+
+.user .search input {
+    position: absolute;
+    background: #5f5f5f;
+    color: #fff;
+    text-align: center;
+    height: 42px;
+    width: calc(100% - 50px);
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.user .search input.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.user .search Button {
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #94949400;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+}
+
+.user .search Button.active {
+    color: #fff;
+    background: #333;
+}
+
+.user .search Button.active i::before {
+    content: "\f00d";
+}
+
+.user .user-list {
+    max-height: 350px;
+    width: 390px;
+    overflow-y: auto;
+}
+
+.user .user-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+.user .user-list a {
+    padding-right: 15px;
+    margin-bottom: 18px;
+    page-break-after: 10px;
+    border-bottom-color: #f1f1f1;
+}
+
+.user .user-list a:last-child {
+    border: none;
+    margin-bottom: Opx;
+}
+
+.user .user-list a .content img {
+    height: 40px;
+    width: 40px;
+}
+
+.user .user-list a .content p {
+    color: #fff;
+}
+
+.user .user-list a .status-dot {
+    font-size: 12px;
+    color: #468669;
+}
+
+.user .user-list a .status-dot.offline {
+    font-size: 12px;
+    color: #ccc;
+}

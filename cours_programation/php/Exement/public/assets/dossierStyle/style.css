@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #949494d1;
+}
+
+.wrapper {
+    /*    background: #151414d1;*/
+    width: 450px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: inset 0px 1px 15px 4px rgb(0 0 0 / 59%);
+    transition: 0.5s;
+}
+
+/* inscription à partir du code css */
+
+.form {
+    padding: 25px 30px;
+}
+
+.form header {
+    position: relative;
+    color: #fffafaf7;
+    text-align: center;
+    text-shadow: -6px 11px 13px rgb(0 0 0);
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.form form {
+    margin: 20px 0;
+}
+
+.form form .error-txt {
+    position: relative;
+    bottom: 10px;
+    color: #721C24;
+    font-weight: 600;
+    background: #ef8d9682;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15xp;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+
+.form form .name-details {
+    display: flex;
+}
+
+.form form .name-details .field:first-child {
+    margin-right: 10px;
+}
+
+.form form .name-details .field:last-child {
+    margin-left: 10px;
+}
+
+.form form .field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form form .field label {
+    margin-bottom: 2px;
+    color: #050419fa;
+    font-weight: bold;
+}
+
+.form form .input {
+    outline: none;
+}
+
+.form form .input input {
+    background: #5f5f5f;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form form .image {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form form .image input {
+    font-size: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form form .button input {
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form form .field i {
+    position: absolute;
+    right: 15px;
+    color: #ccc;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.form .link a {
+    color: #333;
+}
+
+.form .link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+body {
+    background-color: #112332;
+}
+
+.listeFacture,
+.infoProgessionF {
+    position: relative;
+    bottom: 10px;
+    height: 30px;
+    background-color: #337ab7;
+}
+
+.afficheInfo,
+.afficheInfoF {
+    padding-left: 12px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#myProgress {
+    width: 10%;
+    background-color: #ddd;
+}
+
+.btnAction {
+    text-align: center;
+    padding: 1px;
+    display: none;
+}
+
+#myBar {
+    width: 5%;
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    pointer-events: auto;
+    padding: 1px;
+    display: none;
+}

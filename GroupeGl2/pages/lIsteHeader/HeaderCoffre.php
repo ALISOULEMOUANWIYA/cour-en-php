@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GROUPE GL.L2</title>
+  
+  <link rel="stylesheet" href="../public/fichierCSS/BarNavigationStyle.css">
+  <link rel="stylesheet" href="../public/fichierCSS/StyleCadreCoffres.css">
+  <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body{
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: #171c24;
+}
+.boutonclasse a{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 19px;
+}
+    .btn-disable{
+        cursor: not-allowed;
+        color: #ccc;
+        
+    }
+</style>
+</head>
+<body class=" ">

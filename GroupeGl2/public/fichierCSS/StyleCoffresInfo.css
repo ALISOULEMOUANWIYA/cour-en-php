@@ -1,0 +1,95 @@
+
+.card-deck .Corps_Contenue ul {
+    position: relative;
+    left: 32px;
+}
+.card-deck .Corps_Contenue ul li{
+    list-style: none;
+    text-align: left;
+    color: burlywood
+}
+
+/*---------------------- debut contenu cadres coffres---------------*/
+.card-deck .Corps_Contenue ul li:nth-child(1) a{
+    position: relative;
+    letter-spacing: 15px;
+    right: 0;
+    color: chocolate;
+}
+.card-deck .Corps_Contenue ul li:nth-child(2) a{
+    position: relative;
+    letter-spacing: 18px;
+    right: 0;
+    color: chocolate;
+}
+.card-deck .Corps_Contenue ul li:nth-child(3) a{
+    position: relative;
+    letter-spacing: 60px;
+    right: 0;
+    color: chocolate;
+}
+.card-deck .Corps_Contenue ul li:nth-child(4) a{
+    position: relative;
+    letter-spacing: 25px;
+    right: 0;
+    color: chocolate;
+}
+.card-deck .Corps_Contenue ul li:nth-child(5) a{
+    position: relative;
+    letter-spacing: 25px;
+    right: 0;
+    color: chocolate;
+}
+.card-deck .Corps_Contenue ul li:nth-child(6) a{
+    position: relative;
+    letter-spacing: 30px;
+    right: 0;
+    color: chocolate;
+}
+/*------------------------fin contenu cadre coffres----------*/
+.card-deck .Corps_Contenue ul li {
+    color: blanchedalmond;
+}
+.card-deck .Corps_Contenue ul hr{
+    width: 230px;
+}
+.card-deck .Corps_Contenue ul button{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    left: -35px;
+    border: none;
+    background: linear-gradient(132deg, #181729, #0b5a44);
+    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0,0,0,0.5);
+    transition: 0.9s;
+}
+.card-deck .Corps_Contenue ul button{
+    position: relative;
+    border: none;
+    background: linear-gradient(132deg, #181729, #0b5a44);
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 5px 4px 3px 2px rgba(0,0,0,0.5);
+    transition: 0.9s;
+}
+.card-deck .Corps_Contenue ul button:hover{
+    border: none;
+    background: linear-gradient(135deg, #95e001, #92001b);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 3px 2px 1px 1px rgba(250,250,250,0.1);
+    transition: 0.9s;
+}
+.card-deck .Corps_Contenue ul button:hover a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 3px 2px 1px 1px rgba(250,250,250,0.1);
+    transition: 0.9s;
+}

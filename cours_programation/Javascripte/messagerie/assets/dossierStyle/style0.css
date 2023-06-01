@@ -1,0 +1,207 @@
+.wrapper {
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu {
+    display: flex;
+    margin: 12px;
+}
+
+.Injection {
+    display: none;
+}
+
+.wrapper .ListeMenu .Menu {
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu .Menu .NavigationBtn {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    width: 102px;
+    height: 30px;
+    right: 5px;
+    margin-left: 5px;
+    background: #94949466;
+    border: none;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper .ListeMenu .Menu .NavigationBtn:hover {
+    background: #613869a6;
+    color: #fff;
+}
+
+.wrapper .ListeMenu .Menu .NavigationBtn.active {
+    color: #fff;
+    background: #333;
+}
+
+.wrapper .ListeMenu .Menu .NavigationBtn i {
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.wrapper .ListeMenu2 .pageActivity {
+    width: 450px;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 .amiPage {
+    position: relative;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) {
+    position: relative;
+    display: none;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) {
+    position: relative;
+    left: 25px;
+    max-height: 350px;
+    width: 390px;
+    overflow-y: auto;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation)::-webkit-scrollbar {
+    width: 0px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) {
+    border-bottom-color: groove;
+    margin: 12px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) {
+    display: flex;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .content {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    right: 5px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .content img {
+    position: relative;
+    background: white;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-right-style: groove;
+    border-left-style: groove;
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .content .UserNom {
+    position: relative;
+    overflow: hidden;
+    top: 15px;
+    margin-left: 10px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction {
+    position: relative;
+    display: flex;
+    top: 7px;
+    right: 0%;
+    width: 22%;
+    height: 31px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction button i {
+    margin: 5px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction button:hover {
+    background: #04fd51b3;
+    color: white;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction button:hover i {
+    border-radius: 20px;
+    color: red;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction.active {
+    background: "#635959ad";
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction.active button:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction :is(button, .invitationAttente) {
+    text-align: center;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    width: 100%;
+    height: 31px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .invitationAttente {
+    font-size: 12px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: black;
+    width: 100%;
+    height: 31px;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .invitationAttente p {
+    position: relative;
+    top: 6px;
+    color: white;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .ListeButton {
+    position: relative;
+    left: 1.5px;
+    display: flex;
+    width: 100%;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .ListeButton button {
+    margin-right: 5px;
+    width: 150%;
+    border: 2px solid blue;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .ListeButton button:hover {
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .ListeButton .button1:hover i {
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .ListeButton .button2:hover {
+    background-color: red;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.wrapper .ListeMenu2 :is(.amiPage, .membrePage, .invitationPage) :is(.userAmijouter, .userMembre, .userInvitation) :is(.list, .listInvt) :is(.AmisPersonne, .membrePersonne, .invitationPersonne) .choixAction .ListeButton .button2:hover i {
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}

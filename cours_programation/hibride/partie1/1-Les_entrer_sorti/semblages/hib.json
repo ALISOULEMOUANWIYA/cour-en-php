@@ -1,0 +1,73 @@
+{
+    "java": {
+        "bibliotheque": [],
+        "packege": [],
+        "methode": [],
+        "union": ["ext_cotlin", "ext_flutter"]
+    },
+    "cs": {
+        "bibliotheque": [],
+        "packege": [],
+        "methode": []
+    },
+    "cpp": {
+        "bibliotheque": [],
+        "packege": [],
+        "methode": [],
+        "union": ["ext_c"]
+    },
+    "c": {
+        "ext_c": true,
+        "bibliotheque": [],
+        "packege": [],
+        "methode": []
+    },
+    "py": {
+        "bibliotheque": [],
+        "packege": [],
+        "methode": [],
+        "union": []
+    },
+    "flutter": {
+        "ext_flutter": true,
+        "bibliotheque": [],
+        "packege": [],
+        "methode": []
+    },
+    "coltine": {
+        "ext_cotlin": true,
+        "bibliotheque": [],
+        "packege": [],
+        "methode": []
+    },
+    "php": {
+        "bibliotheque": [],
+        "packege": [],
+        "methode": [],
+        "framwork": []
+    },
+    "js": {
+        "bibliotheque": [],
+        "packege": [],
+        "methode": [],
+        "framwork": []
+    },
+    "system": {
+        "linux": {
+            "sh": {
+                "bibliotheque": [],
+                "methode": []
+            }
+        },
+        "windows": {
+            "ba": {
+                "bibliotheque": [],
+                "methode": []
+            }
+        },
+        "mac": {
+
+        }
+    }
+
+}

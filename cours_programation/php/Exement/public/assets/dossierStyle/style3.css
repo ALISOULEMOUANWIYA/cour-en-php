@@ -1,0 +1,109 @@
+body{
+    overflow-y: auto;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+}
+.wrapper .chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+.wrapper .chat-area header .return-icon{
+    font-size: 18px;
+    color: #ccc;
+}
+.wrapper .chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+.wrapper .chat-area header .details span{
+    font-size: 17px;
+    font-weight: 500;
+}
+/*Message poster*/
+.wrapper .chat-area .chat-box{
+    background: #151414d1;
+    overflow: auto;
+    border-radius: 0px 0px  18px 18px;
+    height: 450px;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0px 1px 15px 4px rgb(0 0 0 / 59%),
+                inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.wrapper .chat-area .chat-box::-webkit-scrollbar{
+    width: 0px;
+}
+.wrapper .chat-area .chat-box .chat{
+    margin: 15px 0;
+}
+.wrapper .chat-area .chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: inset 0px 1px 15px 4px rgb(0 0 0 / 59%),
+                inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.wrapper .chat-area .chat-box .outgoing{
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper .chat-area .chat-box .outgoing .details {
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+.wrapper .chat-area .chat-box .outgoing .details p{
+    color: #fff;
+    box-shadow: inset 0px 0px 10px 1px rgb(0 0 0 / 59%);
+    border-radius: 18px 18px  0px 18px;
+}
+.wrapper .chat-area .chat-box .outgoing img{
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+}
+.wrapper .chat-area .chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper .chat-area .chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+}
+.wrapper .chat-area .chat-box .incoming .details{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+.wrapper .chat-area .chat-box .incoming .details p{
+    background: #949494d1;
+    color: #fff;
+    border-radius: 18px 18px  18px 0px;
+}
+/* controller flux massage*/
+.wrapper .chat-area .typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .chat-area .typing-area input{
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px;
+    outline: none;
+}
+.wrapper .chat-area button{
+    width: 55px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+    font-size: 19px;
+    cursor:pointer;
+    border-radius: 0 5px 5px 0;
+}

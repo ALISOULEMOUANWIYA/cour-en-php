@@ -1,0 +1,226 @@
+
+.contenue{
+  position: relative;
+  width: 70%;
+  background: #343a40;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  min-height: 88vh;
+  overflow: hidden;
+  top: 50px;
+  left: 15%;
+  margin-right: auto;
+  z-index: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.contenue .title{
+  position: absolute;
+  text-align: center;
+  left: 20px;
+  top: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  color: aquamarine;
+}
+.contenue .title::before{
+  content: "";
+  position: absolute;
+  left: 33%;
+  top: 40px;
+  height: 3px;
+  width: 330px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.contante form .user-details{
+  position: relative;
+  left: 20%;
+  top: 78px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .user-details .input-box{
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  color: dimgrey;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 90%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #5f5757ba;
+  color: aliceblue;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.user-details .input-box select.ColectionRole{
+  height: 55px;
+  width: 80%;
+  left: 20px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #5f5757ba;
+  color: aliceblue;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ 
+form .button{
+   position: absolute;
+   width: 100%;
+   height: 45px;
+   margin: 35px 0;
+   bottom: 40px;
+ }
+ form .button input{
+   position: relative;
+   top: 50px;
+   left: 37%;
+   height: 100%;
+   width: 25%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ form .button input:hover{
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+ form .button .position{
+   position: relative;
+   top: 50px;
+   left: 40%;
+   height: 100%;
+   width: 20%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(291deg, #7ce671, #ff0018)
+}
+form .button .position:hover{
+  background: linear-gradient(79deg, #7ce671, #ff0018)
+}
+@media screen and (max-width: 950px){
+ .contenue{
+    position: relative;
+    width: 70%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .contante form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+}
+@media(max-width: 584px){
+ .contenue{
+    position: relative;
+    width: 90%;
+    left: 25px;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .contante form .user-details{
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+}
+
+@media(max-width: 376px){
+ .contenue{
+    position: relative;
+    width: 90%;
+    left: 17px;
+  }
+.contenue .title{
+  position: absolute;
+  text-align: center;
+  left: -30px;
+  top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  color: aquamarine;
+}
+.contenue .title::before{
+  content: "";
+  position: absolute;
+  left: 19%;
+  top: 15px;
+  height: 3px;
+  width: 100px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+  form{
+    position: absolute;
+    width: 100%;
+    left: -45px;      
+  }
+ form .user-details{
+    position: absolute;
+    width: 100%;
+    left: -25px;  
+ }
+  form .user-details .input-box span.details{
+      position: relative;
+      left: 15px;
+      color: dimgray;
+  }
+ .user-details .input-box input{
+     position: relative;
+      height: 45px;
+      width: 90%;
+      left: 15px;
+  }
+ form .button {
+   position: relative;
+   width: 85%;
+ }
+ form .button input{
+   position: relative;
+   top: 100px;
+   left: 37%;
+   height: 100%;
+   width: 65%;
+ }
+
+}
+

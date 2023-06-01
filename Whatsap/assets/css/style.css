@@ -1,0 +1,49 @@
+/* ------- START OF NAVBAR ------- */
+
+.headerNavBar {
+    height: 130px;
+    background: rgb(11, 58, 32);
+}
+
+.topNavBar {
+    height: 30px;
+}
+
+.bottomNavBar div {
+    text-align: center;
+    border-bottom: 3px solid rgb(11, 58, 32);
+    margin-bottom: 3px;
+}
+
+.bottomNavBar div a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+
+.bottomNavBar #camera {
+    margin-left: 25px;
+}
+
+.bottomNavBar div:hover {
+    border-bottom: 3px solid #FFF;
+    color: white;
+}
+
+#img {
+    width: 95px;
+    height: auto;
+    border-radius: 90px;
+    padding: 4px;
+}
+
+
+/* -------- END OF NAVBAR ------ */
+
+.viewContent {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.596);
+}
+
+.viewContent {
+    overflow: hidden;
+}

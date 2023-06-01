@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webaudio - orientation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	</head>
+     <style>
+        body{
+            background: rgb(0 0 0 / 87%);
+        }
+        body h2{
+            position: relative;
+            width: 500px;
+            top: 240px;
+            left: 14%;
+            font-weight: bold;
+            color: beige;
+            text-align: center;
+        }
+        .cadre{
+            position: relative;
+            top: 250px;
+            left: 18%;
+            width: 400px;
+            height: 150px;
+            background: #272626;
+            text-shadow: 0.1px 0.1px 5px white, 0 0 0.3em white, 0 0 0.1em white;
+            margin: 0px 5px;
+            border-radius: 10px;
+            border-left-style: groove;
+            border-right-style: groove;
+            box-shadow:20px 0px 2px 8px rgb(126 126 150 / 40%);
+            font: 1.0em Georgia, serif;
+            transition: 1.7s;
+        }
+        .cadre:hover{
+            background: #211b1b;
+            border-color: black;
+            transition: 1.7s;
+            box-shadow: -19px 0px 2px 8px rgb(81 121 101 / 40%);
+            text-shadow: 0.1px 0.1px 5px black, 0 0 0.3em blue, 0 0 0.1em blue;
+            color: white;
+            font: 1.0em Georgia, serif;
+        }
+        #demo{
+            position: relative;
+            top: 10%;
+            left: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: darkslategrey;
+        }
+        #demo input{
+            text-align: center;
+            display: initial;
+            position: relative;
+            top: 2px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+         #demo #inp1,#inp2{
+             left: 53px;
+         }
+         #demo #inp2{
+             left: 23px;
+         }
+         #overlay{
+             width: 57px;
+             position: relative;
+             top: -60px;
+             left: 310px;
+         }
+         button{
+           position: relative;
+           border: none;
+           font-weight: bold;
+           height: 30px;
+           border-radius: 20px;
+           box-shadow: 1px 0px 6px 7px rgb(250 250 255 / 20%);
+           transition: 0.5s;
+         }
+         button:hover{
+           box-shadow: 1px 0px 6px 5px rgb(0 250 255 / 20%);
+            transition: 0.5s;
+         }
+        .cadre #alert{
+            position: relative;
+            top: -20px;
+            text-align: center;
+        }
+         audio{
+             display: none;
+         }
+    </style>
+    <body>
+        <audio controls id="musicinput" preload="none">
+            <source src="Mouse_Scrolling.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls id="musicOver" preload="none">
+            <source src="Mouse_Click.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls  id="musicButon" preload="none">
+            <source src="Mouse_1.mp3" type="audio/mpeg">
+        </audio>
+        <h2> Recherche d'éléments HTML par identifiant </h2>
+        
+        <div class="cadre" id="cadre" onmouseover="starMusique()">
+            <div id="demo">
+                <form name="MonForm" action="" method="post">
+                    <label>Nom :</label><input id="inp1" type="text" onclick="clickerinp()" name="nom" placeholder="Le nom"><br>
+                    <label>Prenom :</label><input id="inp2" onclick="clickerinp()" type="text" name="prenom" placeholder="Le Prenom">
+                </form>
+                <div id="overlay">
+                 <button id="startButton" onclick="Mafonction()">valider</button>
+                </div>
+            </div>
+            <p id="alert">0</p>
+        </div>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        
+        <script>
+            function Mafonction(){ 
+                clicker();
+                var x = document.forms["MonForm"];
+                var textes = "";
+                for(var i = 0; i < x.length; i++){
+                    textes += x.elements[i].value+" ";
+                }
+                document.getElementById("alert").innerHTML = textes;
+                document.getElementById("inp1").value = "";
+                document.getElementById("inp2").value = "";
+            }
+            function starMusique(){
+                const audioElement = document.getElementById( "musicOver" );
+			    audioElement.play();
+            }
+            function clicker(){
+               const audioElement = document.getElementById( 'musicButon' );
+			    audioElement.play();
+            }
+            function clickerinp(){
+               const audioElement = document.getElementById( 'musicinput' );
+			    audioElement.play();
+            }
+        </script>
+
+    </body>
+</html>

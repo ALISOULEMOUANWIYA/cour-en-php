@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600);
+html {
+  width: 100%;
+}
+/*Coprs:*/
+body {
+  background: #080a13;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+/*Mere:------------*/
+.ring-wrapper {
+  position: fixed;
+/* background: red;*/
+  bottom: -185px;
+  display: block;
+  width: 665px;
+  height: 665px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/*mere:------------*/
+.ring-wrapper .ring {
+  position: absolute;
+  display: block;
+  background: #2f3b8eb0;
+/*  background-image: linear-gradient(red, #2f3b8eb0, blue);*/
+  box-shadow:inset 0px 1px 6px 4px rgb(0 243 255 / 57%);
+  width: 500px;
+  height: 500px;
+  top: 85px;
+  left: 82px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border-radius: 100%;
+} 
+
+/*===================== debut circulaire ========================*/
+/*enfant: cireculation des profile------*/
+.ring-wrapper .ring .interaction {
+ position: absolute;
+  width: 475px;
+  height: 475px;
+  top: 12px;
+  left: 12px;
+  background: #150814a6;
+  box-shadow:inset 0px 1px 8px 6px rgb(169 255 0 / 59%);
+  display: block;
+  border-radius: 100%;
+  transition: 1s;
+  z-index: 1;
+}
+
+.ring-wrapper .ring:hover + .ring {
+  transition: box-shadow 0.25s;
+}
+
+/*gride des utilisateur ajouter*/
+.ring-wrapper .ring .interaction .label {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  transform-origin: 50% 0;
+  text-shadow: 1px 1px 4px rgba(250, 0, 250, 0.5);
+  box-shadow:0px 1px 7px 2px rgb(250 0 250 / 18%);
+  line-height: 100px;
+  font-size: 2em;
+  transition: color 1s;
+  border-radius: 50%;
+}
+
+/*prifile utilisateur-----------------------*/
+
+
+.ring-wrapper .ring .interaction .label .span {
+  display: inline-block;
+  position: relative;
+  top: -116px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: #465d61c7;
+  box-shadow: 0px 1px 7px 3px rgb(251 251 251 / 18%);
+  font-weight: bold;
+  border-radius: 50%;
+    z-index: 2;
+}
+.ring-wrapper .ring .interaction .label .span .nomUtilisateur{
+/*    z-index: 2;*/
+    visibility: hidden;
+}
+.ring-wrapper .ring .interaction .label .span .photoUser  {
+  display: inline-block;
+  position: relative;
+  top: -80px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: #465d61c7;
+  box-shadow: 0px 1px 7px 3px rgb(251 251 251 / 18%);
+  font-weight: bold;
+  border-radius: 50%;
+/*  z-index: 1;*/
+}
+.ring-wrapper .ring .interaction .label .span:hover{
+  cursor: pointer;
+  background: #465d61c7;
+  font-weight: bold;
+}
+
+/* rotation des grides des utilisateur ajouter*/
+.label:nth-child(1) {
+ 
+  transform: rotate(0deg) translate(0, -50%);
+}
+
+.label:nth-child(2) {
+  transform: rotate(30deg) translate(0, -50%);
+}
+
+.label:nth-child(3) {
+  transform: rotate(60deg) translate(0, -50%);
+}
+
+.label:nth-child(4) {
+  transform: rotate(90deg) translate(0, -50%);
+}
+
+.label:nth-child(5) {
+  transform: rotate(120deg) translate(0, -50%);
+}
+
+.label:nth-child(6) {
+  transform: rotate(150deg) translate(0, -50%);
+}
+
+.label:nth-child(7) {
+  transform: rotate(180deg) translate(0, -50%);
+}
+
+.label:nth-child(8) {
+  transform: rotate(210deg) translate(0, -50%);
+}
+
+.label:nth-child(9) {
+  transform: rotate(240deg) translate(0, -50%);
+}
+
+.label:nth-child(10) {
+  transform: rotate(270deg) translate(0, -50%);
+}
+
+.label:nth-child(11) {
+  transform: rotate(300deg) translate(0, -50%);
+}
+
+.label:nth-child(12) {
+  transform: rotate(330deg) translate(0, -50%);
+}
+/*===================== fin circulaire ========================*/
+/*----------------------------STYLE MASSAGERI ------------------*/
+.ring-wrapper .cadreMessage{
+  position: absolute;
+/*  display: block;*/
+  background: #1f2025b0;
+  width: 400px;
+  height: 400px;
+  top: 135px;
+  left: 135px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow:inset 0px 1px 13px 6px rgb(214 214 214 / 40%);
+  border-radius: 100%;
+  z-index: 3;
+}
+
+/* gride controller boutton droite et gauche*/
+.ring-wrapper .cadreMessage .controllers_icons{
+    position: relative;
+    display: flex;
+    top: 165px;
+    width: 110%;
+    right: 21px;
+/*    background: #1f2025b0;*/
+    z-index: 1;
+}
+
+/* boutton droite */
+.ring-wrapper .cadreMessage .controllers_icons .incons_droite{
+    height: 30px;
+}
+.ring-wrapper .cadreMessage .controllers_icons .incons_droite .fa{
+    position: relative;
+    font-size: 55px;
+    left: 2px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1,1);
+}
+.ring-wrapper .cadreMessage .controllers_icons .incons_droite .fa:hover{
+    transition: 0.5s;
+    transform: scale(1.5,1.5);
+    color: #00ff08;
+}
+
+/* boutton gauche */
+.ring-wrapper .cadreMessage .controllers_icons .incons_gauche .fa:hover{
+    transition: 0.5s;
+    transform: scale(1.5,1.5);
+    color: #00ff08;
+}
+.ring-wrapper .cadreMessage .controllers_icons .incons_gauche .fa{
+    position: relative;
+    left: 402px;
+    font-size: 55px;
+    color: #fff;
+    transition: 0.5s;
+    transform: scale(1,1);
+    cursor: pointer;
+}
+
+/* gride messagerie*/
+.ring-wrapper .cadreMessage .cadre_messagerie{
+  position: absolute;
+  left: 30px;
+  background: #1f2025b0;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  width: 340px;
+  height: 350px;
+  top: -32px;
+  box-shadow:inset 0px 1px 13px 6px rgb(214 214 214 / 40%);
+  z-index: 3;
+}
+
+/* gride profile utilisateur*/
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser{
+  position: absolute;
+  left: 42px;
+  top: 2px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 250px;
+  height: 50px;
+  box-shadow:inset 0px 1px 13px 6px rgb(214 214 214 / 40%);
+  z-index: 3; 
+}
+
+/* puse des liste UL(mere)*/
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message{
+    position: relative;
+    left: 0px;
+    display: flex;
+    height: 45px;
+    width: 209px;
+    bottom: 14px;
+    border-radius: 50px;
+}
+
+/* enfante UL(mere(li))*/
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li{
+    position: relative;
+    transform: scale(1,1);
+    list-style: none;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:nth-child(1){
+    top: 2px;
+    right: 38px;
+    width: 45px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #000;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:nth-child(2){
+    height: 25px;
+    width: 120px;
+    color: #fff;
+    top: 12px;
+    right: 33px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:nth-child(1) img{
+    position: relative;
+    left: 13px;
+    top: 13px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:nth-child(3){
+    top: 15px; 
+    height: 20px;
+    right: 30px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:nth-child(4){
+    top: 15px;
+    height: 20px;
+    right: 18px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:nth-child(5){
+    top: 15px;
+    height: 20px;
+    right: 8px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie  .ProfileUser .incons_message li .fa{
+    position: relative;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #00b8ff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .ProfileUser .incons_message li:hover .fa{
+    transition: 0.5s;
+    transform: scale(1.5,1.5);
+    color: #fff;
+}
+
+
+
+
+/* gride controllers flux messagerie */
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message{
+    position: relative;
+    display: flex;
+    background: #1f2025b0;
+    box-shadow:inset 0px 1px 13px 6px rgb(214 214 214 / 40%);
+    height: 40px;
+    top: 330px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li{
+    position: relative;
+    bottom: 3px;
+    transform: scale(1,1);
+    list-style: none;
+    margin: 6px;
+    right: 33px;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li .fa{
+    position: relative;
+    font-size: 28px;
+    border-radius: 20px;
+    color: #00b8ff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li:hover .fa{
+    transition: 0.5s;
+    transform: scale(1.5,1.5);
+    color: #fff;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li:nth-child(5) {
+  position: relative;
+  display: none;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li:nth-child(5) .fa{
+  position: relative;
+  color: #FF5722;
+  transition: 0.5s;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li:nth-child(5) .fa:hover{
+  position: relative;
+ color: #00ff08;
+ transition: 0.5s;
+}
+
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li:nth-child(6) .fa{
+  position: relative;
+  color: #00ff08;
+  transition: 0.5s;
+}
+.ring-wrapper .cadreMessage .cadre_messagerie .controlles_flux .incons_message li:nth-child(6) .fa:hover{
+  position: relative;
+ color: #FF5722;
+ transition: 0.5s;
+}

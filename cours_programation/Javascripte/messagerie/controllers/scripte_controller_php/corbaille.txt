@@ -1,0 +1,50 @@
+$i=0;
+      $this->ListesInvitation();
+      $this->ListesAmi();
+      if(sizeof($this->getIvitation()) > 0){
+        foreach($this->getIvitation() as $row ){
+          $i += 1;
+            foreach($this->getListeAmi() as $Tableau){
+              
+              if($Tableau['ID_unque_Amis']  == $row['unique_id'] && $Tableau['AmisAjouter'] == $_SESSION['unique'] && $Tableau['Demende'] == "Attendre"){
+                    $this->UtilisateurIvitation .="            <div class='listInvt user_list_invitation".$i."'>
+                    <div class='invitationPersonne invitation".$i."'>
+                      <div class='content'>
+                        <img  src='assets/images/".$row['img']."' class='details' alt=''>
+                        <div class='UserNom details'>
+                            <span class='UserFnam'>".$row['fname']."</span>
+                            <span class='UserLnam'>".$row['lname']."</span>
+                        </div>
+                      </div>
+                      <div class='choixAction actionSup".$i."'>
+                          <span style='position : absolute; visibility: hidden; bottom: 12px;' class='IDuniqueInvitation InvitationUnique".$i."'>".$row['unique_id']."</span>
+                          <div name='Demande' class='idDemande ListeButton'>
+                              <Button onclick='faitActionAccepter1(".$i.")' class='button1' value='1'><i class='fa fa-plus' aria-hidden='true' ></i></Button>
+                              <Button onclick='faitActionAccepter2(".$i.")' class='button2' value='3'><i class='fa fa-trash-o' aria-hidden='true' ></i></Button>
+                          </div>
+                      </div>
+                    </div>  
+                </div>";    
+             }else{
+                if($Tableau['AmisAjouter']  == $row['unique_id'] && $Tableau['ID_unque_Amis'] == $_SESSION['unique'] && $Tableau['Demende'] == "Attendre"){
+                        $this->UtilisateurIvitation .="            <div class='listInvt user_list_invitation".$i."'>
+                        <div class='invitationPersonne invitation".$i."'>
+                          <div class='content'>
+                            <img  src='assets/images/".$row['img']."' class='details' alt=''>
+                            <div class='UserNom details'>
+                                <span class='UserFnam'>".$row['fname']."</span>
+                                <span class='UserLnam'>".$row['lname']."</span>
+                            </div>
+                          </div>
+                          <div class='choixAction action".$i."'>
+                              <div class='invitationAttente'>
+                                  <p>En attente</p>
+                              </div>
+                          </div>
+                        </div>  
+                    </div>";
+                }
+              }
+           }
+        }
+    }

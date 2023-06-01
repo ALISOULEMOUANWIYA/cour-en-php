@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2> Recherche d'éléments HTML par identifiant </h2>
+
+         <p class = "intro"> Le DOM est très utile. </p>
+         <p class="intro"> Cet exemple illustre la méthode </p> 
+          <ul>
+              <li><b>getElementsByClassName</b></li>
+              <li><b>querySelectorAll</b></li>
+          </ul> 
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            var myElement = document.getElementsByClassName("intro");
+            document.getElementById("demo").innerHTML = 
+            'Le premier paragraphe (index 0) avec class = "intro":'+myElement[0].innerHTML;
+            var x = document.querySelectorAll("p.intro");
+            document.getElementById("demo1").innerHTML = 
+                'Le premier paragraphe (index 1) avec class = "intro":'+x[1].innerHTML;
+        </script>
+
+    </body>
+</html>

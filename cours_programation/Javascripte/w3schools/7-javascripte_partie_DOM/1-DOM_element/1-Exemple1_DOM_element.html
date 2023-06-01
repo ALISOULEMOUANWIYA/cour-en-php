@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2> Recherche d'éléments HTML par identifiant </h2>
+
+         <p id="intro"> Bonjour tout le monde! </p>
+         <p> Cet exemple illustre la méthode </p> 
+          <ul>
+              <li>getElementsById</li>
+              <li>getElementsByTagName</li>
+              <li></li>
+              <li></li>
+          </ul> 
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            var myElement = document.getElementById("intro");
+            document.getElementById("demo").innerHTML = 
+            "Le texte du paragraphe d'introduction est " + myElement.innerHTML;
+            var x = document.getElementsByTagName("p");
+            document.getElementById("demo1").innerHTML = 
+                "Le texte du premier paragraphe (index 0) est:"+x[0].innerHTML;
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^.{0}$ index.php
+RewriteRule ^factures$ view/facture/liste.php
+RewriteRule ^reglements$ view/reglement/liste.php
+
+RewriteRule ^reglementController$ controllee/reglementController.php
+RewriteRule ^factureController$ controllee/factureController.php

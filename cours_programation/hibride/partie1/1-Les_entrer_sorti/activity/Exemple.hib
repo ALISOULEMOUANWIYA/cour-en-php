@@ -1,0 +1,81 @@
+struct.permition.pack=(
+    import java.util.*;
+    #include<stdio.h>
+)conf;
+struct.call(class(*){
+    #include "jour.h";
+    import jour.java;
+})conf;
+
+hibride class generality:hib(*){
+    hib:java(){
+      public class jour{
+        public static void main(String[] args){
+            
+        }
+      }
+    }
+    hib:cpp(){
+       int main(){
+       
+       }
+    }
+    hib:flux(){
+      public flux main(String[] flux){
+            <<(if=>)>>(hib)<web.app>(php,js){
+                if(i[3]=>function(){
+                    hib_php.echo $valeur;
+                    hib_php.console.log valeur;
+                 })-else(=>{
+
+                 })
+            }<<(elseif=>)>>(hib)<app.p.t.cl>(php,js){
+                if(i[3]=>function(){
+                    hib_php.echo $valeur;
+                    hib_php.console.log valeur;
+                })-else(=>{
+
+                })
+            }<<(elseif=>)>>(hib)<app.deck>(php,js){
+                 if(i[3]=>function(){
+
+                })-else(=>{
+
+                })
+            }<<(elseif=>)>>(hib)<app.gl>(php,js){
+                if(i[3]=>function(){
+
+                })-else(=>{
+
+                })
+            }<<(else=>)>>(hib)<?>(?){
+                if(?=>function(){
+
+                })-else(=>{
+
+                })
+            }
+
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

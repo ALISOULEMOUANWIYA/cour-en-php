@@ -1,0 +1,22 @@
+{
+    "Nom":"Ali Soule",
+    "Prenom":"Mouanwiya",
+    "Preferance_Animal":[
+        {
+            "Animal":"Chien",
+            "Nom":"Milou"
+        },
+        {
+            "Animal":"Chat",
+            "Nom":"Grise"
+        },
+        {
+            "Animal":"Manki",
+            "Nom":"Nanki"
+        }
+    ],
+    "Amis":{
+            "Nom":"John",
+            "Age":"function(){ return(30);}"
+        }
+}
